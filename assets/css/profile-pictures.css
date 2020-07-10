@@ -34,6 +34,10 @@ section {
   grid-row-gap: 7px;
 }
 
+.team-distribution a {
+  display: none;
+}
+
 .team-distribution img {
   width: 98%;
   height: 98%;
@@ -43,25 +47,18 @@ section {
   grid-column: 1/2;
 }
 
-.team-distribution .img-1 {
-  background-image: url("../images/img1.jpg");
+.team-distribution-img {
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50%;
-  grid-column: 2/3;
-  grid-row: 1/2;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.team-distribution a {
-  display: none;
-}
-
-.team-distribution .img-1:hover a {
+.team-distribution .team-distribution-img:hover a {
   font-family: "Play", sans-serif;
   color: #f2d557;
   text-shadow: 2px 2px 2px black;
@@ -77,39 +74,52 @@ section {
   text-decoration: none;
 }
 
+.team-distribution .img-1 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  background-image: url("../images/FranciscoS.jpg");
+}
+
 .team-distribution .img-2 {
   grid-column: 3/4;
   grid-row: 1/2;
+  background-image: url("https://pbs.twimg.com/profile_images/969073897189523456/rSuiu_Hr.jpg");
 }
 
 .team-distribution .img-3 {
   grid-column: 4/5;
   grid-row: 2/3;
+  background-image: url("https://pbs.twimg.com/profile_images/969073897189523456/rSuiu_Hr.jpg");
 }
 
 .team-distribution .img-4 {
   grid-column: 4/5;
   grid-row: 3/4;
+  background-image: url("../images/JuanE.jpg");
 }
 
 .team-distribution .img-5 {
   grid-column: 3/4;
   grid-row: 4/5;
+  background-image: url("https://pbs.twimg.com/profile_images/969073897189523456/rSuiu_Hr.jpg");
 }
 
 .team-distribution .img-6 {
   grid-column: 2/3;
   grid-row: 4/5;
+  background-image: url("https://pbs.twimg.com/profile_images/969073897189523456/rSuiu_Hr.jpg");
 }
 
 .team-distribution .img-7 {
   grid-column: 1/2;
   grid-row: 3/4;
+  background-image: url("../images/img1.jpg");
 }
 
 .team-distribution .img-8 {
   grid-column: 1/2;
   grid-row: 2/3;
+  background-image: url("https://pbs.twimg.com/profile_images/969073897189523456/rSuiu_Hr.jpg");
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
