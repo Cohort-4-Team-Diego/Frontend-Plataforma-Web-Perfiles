@@ -1,6 +1,7 @@
 :root{
     --primary-color:#f1d145;
     --secondary-color: #333642;
+    --tertiary-color: #545869;
 }
 
 
@@ -223,13 +224,25 @@ a{
     padding-right: 10vw;
 }
 
-.modal-footer{
+#contact .list-item-new-member{
+    text-align: center;
+}
+
+#contact .modal-footer-new-member{
     background: none;
-    outline: none;
+    text-decoration: none;
+    color: white;
     border: none;
     cursor: pointer;
-    color:white;
+    padding: 20px 0
 }
+
+#contact .modal-footer-new-member:hover{
+    text-decoration: underline;
+    color: rgb(175, 172, 172);
+}
+
+
 .formulario{
     display:grid;
     grid-template-columns: 1fr 1fr;
@@ -247,7 +260,7 @@ a{
 
 }
 .items-form input{
-    height: 150%;
+    height: 100%;
     outline: none;
     border: none;
     border-radius: 10px;
