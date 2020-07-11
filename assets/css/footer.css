@@ -16,7 +16,6 @@ a{
     outline: none;
     text-decoration: none;
     height: 70px;
-    position: absolute;
     bottom: 0;
     width: 100vw;
     z-index: 1;
@@ -226,6 +225,7 @@ a{
 .bst-imagen-perfil {
     height: 275px;
     margin: 0 auto;
+    border-radius: 5%;
 }
 
 @media (max-width: 1200px) { 
@@ -273,5 +273,38 @@ a{
     #modalPerfil .row {
         margin-left: 0;
         margin-right: 0;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+    #modalPerfil h1 {
+        font-size: 2rem;
+    }
+
+    .bst-imagen-perfil {
+        width: 100%;
+        height: auto;
+    }
+
+    .modal-perfiles {
+        width: 95vw;
+    }
+
+    .container_modal--perfil-caja {
+        width: 95vw;
+    }
+
+    #modalPerfil .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #modalPerfil .profile-details {
+        padding: 15px 0 0;
+    }
+
+    #modalPerfil .profile-answers {
+        padding-left: 0;
     }
 }
