@@ -1,3 +1,9 @@
+:root{
+    --primary-color:#f1d145;
+    --secondary-color: #333642;
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -9,7 +15,6 @@ a{
     color: white;
 
 }
-/*#f1d145*/
 .footer{
     background:linear-gradient(#333642,black) ;
     color: white;
@@ -17,7 +22,7 @@ a{
     text-decoration: none;
     height: 70px;
     bottom: 0;
-    width: 100vw;
+    width: 100%;
     z-index: 1;
     display: grid;
     grid-template-columns: 1fr 10fr 1fr;
@@ -96,10 +101,23 @@ a{
 
 }
 
+.carrusel-perfil h1{
+    color:var(--primary-color);
+}
+
 .modal-perfiles{
     position: relative;
     width: 70vw;
    
+}
+
+.modal-image-column{
+    display: flex;
+    align-items: center;
+}
+
+#modalPerfil .modal-image-container {
+    display: flex;
 }
 
 .close{
@@ -118,12 +136,12 @@ a{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    background-color: lightgrey;
+    background-color: var(--secondary-color);
     height: 70vh;
     width: 70vw;
     box-shadow: 3px 3px 8px black;
     border-radius: 20px;
-    color: black;
+    color: white;
     margin: 0 auto;
 }
 .container_modal--caja{
@@ -137,6 +155,10 @@ a{
     box-shadow: 3px 3px 8px black;
     border-radius: 20px;
     color: black;
+}
+
+.modal-social-icons{
+    
 }
 
 .github{
@@ -222,8 +244,20 @@ a{
     width: 90%;
 }
 
+.carrusel-perfil{
+    width: 90%;
+    height: 60vh;
+    overflow-y: scroll;
+}
+
+#modalPerfil .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
 .bst-imagen-perfil {
-    height: 275px;
+    height: auto;
+    width: 100%;
     margin: 0 auto;
     border-radius: 5%;
 }
@@ -246,6 +280,11 @@ a{
         overflow-y: scroll;
         height: 60vh;
     }
+    .carrusel-perfil{
+        overflow-y: scroll;
+        height: 60vh;
+    }
+    
 
     .abrirlista1 li{
         font-size: 18px;
