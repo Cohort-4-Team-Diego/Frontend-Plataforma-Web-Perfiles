@@ -245,8 +245,8 @@ a{
     .carrusel{
         overflow-y: scroll;
         height: 60vh;
-        
     }
+
     .abrirlista1 li{
         font-size: 18px;
         height: 80px;
@@ -258,5 +258,20 @@ a{
     }
     .lista1 {
         flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    #modalPerfil .modal-image-container {
+        display: flex;
+    }
+
+    #modalPerfil .profile-details {
+        padding: 30px 15px 0 15px;
+    }
+
+    #modalPerfil .row {
+        margin-left: 0;
+        margin-right: 0;
     }
 }
