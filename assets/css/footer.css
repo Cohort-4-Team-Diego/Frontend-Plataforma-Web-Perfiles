@@ -80,10 +80,53 @@ a{
     align-items: center;
 }
 
-.aparece{
-    display:flex;
+
+
+.container_modal--perfil{
+    display: none;
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0,0,0,.5);
+    color: white;
+    z-index: 12;
+    justify-content: center;
+    align-items: center;
+
 }
 
+.modal-perfiles{
+    position: relative;
+    width: 70vw;
+   
+}
+
+.close{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    margin: 0 auto;
+}
+
+.aparece{
+    display:flex ;
+}
+
+.container_modal--perfil-caja{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: lightgrey;
+    height: 70vh;
+    width: 70vw;
+    box-shadow: 3px 3px 8px black;
+    border-radius: 20px;
+    color: black;
+    margin: 0 auto;
+}
 .container_modal--caja{
     display: flex;
     justify-content: center;
@@ -98,7 +141,7 @@ a{
 }
 
 .github{
-    background-image: url("/assets/images/icons8-github-100.png");
+    background-image: url("../../assets/images/icons8-github-100.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -107,7 +150,7 @@ a{
     padding-right: 10vw;
 }
 .facebook{
-    background-image: url("/assets/images/icons8-facebook-104.png");
+    background-image: url("../..//assets/images/icons8-facebook-104.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -116,7 +159,7 @@ a{
     padding-right: 10vw;
 }
 .twitter{
-    background-image: url("/assets/images/icons8-twitter-144.png");
+    background-image: url("../..//assets/images/icons8-twitter-144.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -125,7 +168,7 @@ a{
     padding-right: 10vw;
 }
 .correo{
-    background-image: url("/assets/images/icons8-email-80.png");
+    background-image: url("../..//assets/images/icons8-email-80.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -134,7 +177,7 @@ a{
     padding-right: 10vw;
 }
 .linkedin{
-    background-image: url("/assets/images/icons8-linkedin-104.png");
+    background-image: url("../..//assets/images/icons8-linkedin-104.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -184,6 +227,15 @@ a{
     color: aliceblue;
 }
 
+.carrusel {
+    width: 90%;
+}
+
+.bst-imagen-perfil {
+    height: 275px;
+    margin: 0 auto;
+}
+
 @media (max-width: 1200px) { 
     .items-form{
         display: grid;
@@ -201,6 +253,7 @@ a{
     .carrusel{
         overflow-y: scroll;
         height: 60vh;
+        
     }
     .abrirlista1 li{
         font-size: 18px;
