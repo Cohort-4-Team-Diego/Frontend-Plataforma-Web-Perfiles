@@ -83,7 +83,8 @@ section {
 .team-distribution .img-2 {
   grid-column: 3/4;
   grid-row: 1/2;
-  background-image: url("https://pbs.twimg.com/profile_images/969073897189523456/rSuiu_Hr.jpg");
+  background-image: url("../images/Foto-Ildebrando.jpg");
+  height: auto;
 }
 
 .team-distribution .img-3 {
@@ -101,7 +102,7 @@ section {
 .team-distribution .img-5 {
   grid-column: 3/4;
   grid-row: 4/5;
-  background-image: url("https://pbs.twimg.com/profile_images/969073897189523456/rSuiu_Hr.jpg");
+  background-image: url("../images/Foto-Santiago.jpg");
 }
 
 .team-distribution .img-6 {
