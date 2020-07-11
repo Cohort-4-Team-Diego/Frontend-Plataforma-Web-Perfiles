@@ -149,8 +149,8 @@ a{
     width: 40px;
     padding-right: 10vw;
 }
-.facebook{
-    background-image: url("../..//assets/images/icons8-facebook-104.png");
+.Platzi{
+    background-image: url("https://static.platzi.com/mf-landings/image/isotipoPlatzi-442ccc1186a9806e18c9889cc301ffe1.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -158,8 +158,8 @@ a{
     width: 40px;
     padding-right: 10vw;
 }
-.twitter{
-    background-image: url("../..//assets/images/icons8-twitter-144.png");
+.onedrive{
+    background-image: url("../..//assets/images/icons8-google-drive-240.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -176,15 +176,7 @@ a{
     width: 40px;
     padding-right: 10vw;
 }
-.linkedin{
-    background-image: url("../..//assets/images/icons8-linkedin-104.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 40px;
-    width: 40px;
-    padding-right: 10vw;
-}
+
 .modal{
     background: none;
     outline: none;
