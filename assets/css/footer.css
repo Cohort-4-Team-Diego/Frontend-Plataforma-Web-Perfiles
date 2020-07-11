@@ -20,7 +20,7 @@ a{
     color: white;
     outline: none;
     text-decoration: none;
-    height: 70px;
+    height: 75px;
     bottom: 0;
     width: 100%;
     z-index: 1;
@@ -76,8 +76,7 @@ a{
     left: 0;
     bottom: 0;
     top: 0;
-    background-color: black;
-    opacity: 0.8;
+    background-color: rgba(0,0,0,.5);
     color: white;
     z-index: 12;
     justify-content: center;
@@ -105,7 +104,7 @@ a{
     color:var(--primary-color);
 }
 
-.modal-perfiles{
+.modal-perfiles, .wrapper-footer{
     position: relative;
     width: 70vw;
    
@@ -158,7 +157,10 @@ a{
 }
 
 .modal-social-icons{
-    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 0 30%;
 }
 
 .github{
@@ -179,6 +181,29 @@ a{
     width: 40px;
     padding-right: 10vw;
 }
+
+.platzi-icon{
+    background-image: url("https://static.platzi.com/mf-landings/image/isotipoPlatzi-442ccc1186a9806e18c9889cc301ffe1.png");
+    width: 50px;
+    height: 50px;
+}
+
+.fa-twitter{
+    color: #1da1fa;
+}
+
+.fa-linkedin{
+    color: #0077b5;
+}
+
+.fa-envelope{
+    color: #c03b2b;
+}
+
+.fa-window-close{
+    color: red;
+}
+
 .onedrive{
     background-image: url("../..//assets/images/icons8-google-drive-240.png");
     background-position: center;
@@ -198,7 +223,7 @@ a{
     padding-right: 10vw;
 }
 
-.modal{
+.modal-footer{
     background: none;
     outline: none;
     border: none;
@@ -242,6 +267,8 @@ a{
 
 .carrusel {
     width: 90%;
+    height: 60vh;
+    overflow-y: scroll;
 }
 
 .carrusel-perfil{
@@ -313,6 +340,14 @@ a{
         margin-left: 0;
         margin-right: 0;
     }
+
+    .container_modal--caja h2{
+        padding-top: 10px;
+    }
+    
+    .footer{
+        height: 11vh;
+    }
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -326,7 +361,7 @@ a{
         height: auto;
     }
 
-    .modal-perfiles {
+    .modal-perfiles, .wrapper-footer {
         width: 95vw;
     }
 
@@ -345,5 +380,32 @@ a{
 
     #modalPerfil .profile-answers {
         padding-left: 0;
+    }
+
+    .modal-social-icons{
+        padding: 0 25%;
+    }
+
+    .container_modal--caja{
+        width: 90vw;
+    }
+
+    .container_modal--caja h2{
+        padding-top: 10px;
+        text-align: center;
+        font-size: 1.7rem;
+    }
+
+    .close{
+        right: 7%;
+    }
+
+    .modal-in{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .abrirlista1{
+        margin: 0 10px;
     }
 }
